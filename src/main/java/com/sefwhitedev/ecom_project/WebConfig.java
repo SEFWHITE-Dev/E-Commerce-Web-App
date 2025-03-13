@@ -9,6 +9,8 @@ public class WebConfig implements WebMvcConfigurer {
 
     @Override
     public void addCorsMappings(CorsRegistry registry) {
-        registry.addMapping("/**").allowedOrigins("https://e-commerce-web-app-production-11b7.up.railway.app");
+        registry.addMapping("/**")
+                .allowedOrigins("https://e-commerce-web-app-production-11b7.up.railway.app")
+                .allowedMethods("GET", "POST", "PUT", "DELETE");
     }
 }
