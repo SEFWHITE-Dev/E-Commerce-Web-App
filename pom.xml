@@ -28,6 +28,8 @@
 	</scm>
 	<properties>
 		<java.version>17</java.version>
+		<maven.compiler.source>17</maven.compiler.source> <!-- or 11, or another supported version -->
+		<maven.compiler.target>17</maven.compiler.target> <!-- match this with the source -->
 	</properties>
 	<dependencies>
 		<dependency>
